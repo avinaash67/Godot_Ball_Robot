@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Brown_Waterfall_01.obj-1fb775cb1bb6209297d31368075d99b6.mesh"
+
+[deps]
+
+files=[ "res://.import/Brown_Waterfall_01.obj-1fb775cb1bb6209297d31368075d99b6.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Brown_Waterfall_01.obj"
+dest_files=[ "res://.import/Brown_Waterfall_01.obj-1fb775cb1bb6209297d31368075d99b6.mesh", "res://.import/Brown_Waterfall_01.obj-1fb775cb1bb6209297d31368075d99b6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

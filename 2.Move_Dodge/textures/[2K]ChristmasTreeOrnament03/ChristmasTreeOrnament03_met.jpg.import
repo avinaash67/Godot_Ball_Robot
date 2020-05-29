@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/ChristmasTreeOrnament03_met.jpg-723fbd24a259d0443ba605db16e923d9.s3tc.stex"
+path.etc2="res://.import/ChristmasTreeOrnament03_met.jpg-723fbd24a259d0443ba605db16e923d9.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://textures/[2K]ChristmasTreeOrnament03/ChristmasTreeOrnament03_met.jpg"
+dest_files=[ "res://.import/ChristmasTreeOrnament03_met.jpg-723fbd24a259d0443ba605db16e923d9.s3tc.stex", "res://.import/ChristmasTreeOrnament03_met.jpg-723fbd24a259d0443ba605db16e923d9.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

@@ -1,0 +1,156 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://assets/Avi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://script/Avi.gd" type="Script" id=2]
+[ext_resource path="res://Level_env.tres" type="Environment" id=3]
+[ext_resource path="res://textures/[2K]Ground37/Ground37_col.jpg" type="Texture" id=4]
+[ext_resource path="res://textures/[2K]Ground37/Ground37_nrm.jpg" type="Texture" id=5]
+[ext_resource path="res://textures/[2K]Ground37/Ground37_rgh.jpg" type="Texture" id=6]
+[ext_resource path="res://textures/[2K]Ground37/Ground37_disp.jpg" type="Texture" id=7]
+[ext_resource path="res://assets/kennyNature.tres" type="MeshLibrary" id=8]
+[ext_resource path="res://assets/Robot_enemy.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/character7.tscn" type="PackedScene" id=10]
+[ext_resource path="res://script/Status_label.gd" type="Script" id=11]
+[ext_resource path="res://script/character7.gd" type="Script" id=12]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 10, 1, 10 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 4 )
+roughness_texture = ExtResource( 6 )
+normal_enabled = true
+normal_scale = -5.0
+normal_texture = ExtResource( 5 )
+depth_enabled = true
+depth_scale = 5.0
+depth_deep_parallax = false
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 7 )
+uv1_scale = Vector3( 0.02, 10, 0.02 )
+uv1_triplanar = true
+
+[sub_resource type="CubeMesh" id=3]
+material = SubResource( 2 )
+size = Vector3( 20, 2, 20 )
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends Area
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+#func _physics_process(delta):
+	
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="Animation" id=5]
+resource_name = "Robot_enemy_animation"
+length = 4.0
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.001, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[node name="Level" type="Spatial"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Control" type="Control" parent="."]
+margin_right = 219.0
+margin_bottom = 387.0
+rect_scale = Vector2( 4.68249, 1.85777 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Status_label" type="Label" parent="Control"]
+margin_left = 181.097
+margin_top = 68.2435
+margin_right = 213.097
+margin_bottom = 92.2435
+custom_colors/font_color = Color( 0.843137, 0.113725, 0.321569, 1 )
+text = "Alive"
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Floor" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor"]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000462532, 1.43051e-06, -0.032917 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Avi" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+script = ExtResource( 2 )
+
+[node name="Spatial" type="Spatial" parent="Avi"]
+transform = Transform( -1, 0, -8.74228e-08, -4.74896e-08, 0.839591, 0.543218, 7.33994e-08, 0.543218, -0.839591, 0, 7, -14 )
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, -4.37114e-08, 0.866025, 0.5, 7.57103e-08, 0.5, -0.866025, 0, 11, -24 )
+environment = ExtResource( 3 )
+fov = 73.7
+target = NodePath("../Avi/Spatial")
+speed = 3.0
+enabled = true
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 4, 8, 0 )
+light_color = Color( 0.831373, 0.835294, 0.427451, 1 )
+light_energy = 0.6
+shadow_enabled = true
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource( 8 )
+cell_size = Vector3( 0.25, 0.25, 0.25 )
+data = {
+"cells": PoolIntArray( 262105, 3, 655434, 196652, 5, 537526311, 196653, 15, 655398, 262105, 15, 655434, 196648, 26, 655435, 262111, 27, 655400, 196617, 36, 1441866, 196629, 36, 538312778, 262105, 36, 538312779, 262117, 36, 538312778, 262129, 36, 538312778, 262141, 36, -1609170870, 196651, 65492, 655398, 262111, 65492, 537526311, 262105, 65501, 537526346, 196651, 65502, 537526311, 262107, 65509, 537526317, 196647, 65512, 537526347, 262105, 65515, 537526346, 196649, 65522, 537526318, 262105, 65527, 537526347, 196647, 65530, 537526346 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 3, 0 )
+}
+
+[node name="Robot_enemy" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.5, 5 )
+script = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Robot_enemy"]
+autoplay = "Robot_enemy_animation"
+anims/Robot_enemy_animation = SubResource( 5 )
+
+[node name="character7" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -8 )
+script = ExtResource( 12 )
+[connection signal="body_entered" from="Robot_enemy" to="Avi" method="_on_Robot_enemy_body_entered"]
+[connection signal="body_entered" from="Robot_enemy" to="Control/Status_label" method="_on_Robot_enemy_body_entered"]
+[connection signal="body_exited" from="Robot_enemy" to="Control/Status_label" method="_on_Robot_enemy_body_exited"]

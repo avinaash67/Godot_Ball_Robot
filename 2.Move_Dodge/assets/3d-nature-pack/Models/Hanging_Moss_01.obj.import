@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Hanging_Moss_01.obj-ff801ca1364dcd26b37c3636784dcbca.mesh"
+
+[deps]
+
+files=[ "res://.import/Hanging_Moss_01.obj-ff801ca1364dcd26b37c3636784dcbca.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Hanging_Moss_01.obj"
+dest_files=[ "res://.import/Hanging_Moss_01.obj-ff801ca1364dcd26b37c3636784dcbca.mesh", "res://.import/Hanging_Moss_01.obj-ff801ca1364dcd26b37c3636784dcbca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

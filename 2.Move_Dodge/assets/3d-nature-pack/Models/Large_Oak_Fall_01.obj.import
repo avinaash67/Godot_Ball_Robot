@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Large_Oak_Fall_01.obj-c31a9c2ed8374e2bea0bc46c965aea06.mesh"
+
+[deps]
+
+files=[ "res://.import/Large_Oak_Fall_01.obj-c31a9c2ed8374e2bea0bc46c965aea06.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Large_Oak_Fall_01.obj"
+dest_files=[ "res://.import/Large_Oak_Fall_01.obj-c31a9c2ed8374e2bea0bc46c965aea06.mesh", "res://.import/Large_Oak_Fall_01.obj-c31a9c2ed8374e2bea0bc46c965aea06.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

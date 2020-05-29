@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Tree_02.obj-a7699f4e1724cab51927bf1e160a425f.mesh"
+
+[deps]
+
+files=[ "res://.import/Tree_02.obj-a7699f4e1724cab51927bf1e160a425f.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Tree_02.obj"
+dest_files=[ "res://.import/Tree_02.obj-a7699f4e1724cab51927bf1e160a425f.mesh", "res://.import/Tree_02.obj-a7699f4e1724cab51927bf1e160a425f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Brown_Cliff_01.obj-2995896a7a19bd616f68d7ab45c34e03.mesh"
+
+[deps]
+
+files=[ "res://.import/Brown_Cliff_01.obj-2995896a7a19bd616f68d7ab45c34e03.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Brown_Cliff_01.obj"
+dest_files=[ "res://.import/Brown_Cliff_01.obj-2995896a7a19bd616f68d7ab45c34e03.mesh", "res://.import/Brown_Cliff_01.obj-2995896a7a19bd616f68d7ab45c34e03.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

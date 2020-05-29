@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Grey_Cliff_End_Green_Top_01.obj-8a7f08357c6af77b189a82aaf8d04ea9.mesh"
+
+[deps]
+
+files=[ "res://.import/Grey_Cliff_End_Green_Top_01.obj-8a7f08357c6af77b189a82aaf8d04ea9.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Grey_Cliff_End_Green_Top_01.obj"
+dest_files=[ "res://.import/Grey_Cliff_End_Green_Top_01.obj-8a7f08357c6af77b189a82aaf8d04ea9.mesh", "res://.import/Grey_Cliff_End_Green_Top_01.obj-8a7f08357c6af77b189a82aaf8d04ea9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

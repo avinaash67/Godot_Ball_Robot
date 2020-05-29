@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Plate_River_Corner_01.obj-70440b2c7971ae16b0df5be5bf17c184.mesh"
+
+[deps]
+
+files=[ "res://.import/Plate_River_Corner_01.obj-70440b2c7971ae16b0df5be5bf17c184.mesh" ]
+
+source_file="res://assets/3d-nature-pack/Models/Plate_River_Corner_01.obj"
+dest_files=[ "res://.import/Plate_River_Corner_01.obj-70440b2c7971ae16b0df5be5bf17c184.mesh", "res://.import/Plate_River_Corner_01.obj-70440b2c7971ae16b0df5be5bf17c184.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
